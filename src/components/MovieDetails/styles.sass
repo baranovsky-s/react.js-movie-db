@@ -1,0 +1,68 @@
+.movie-details
+    &-block-left
+        margin-bottom: 20px
+    &__poster
+        max-width: 100%
+    &__title
+        margin-bottom: 20px
+        a
+            color: #2b66ec
+            text-decoration: none
+    &-row
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        &.flex-diraction-column
+            flex-direction: column
+            align-items: flex-start
+        &__title
+            margin-right: 10px
+            font-weight: 600
+    &__rate
+        display: flex
+        justify-content: center
+        align-items: center
+    &-rate
+        &__total-line
+            position: relative
+            width: 100px
+            height: 10px
+            background-color: rgba(0, 255, 0, 0.25)
+        &__line
+            position: absolute
+            left: 0
+            width: 0%
+            height: 100%
+            background-color: lime
+            transition: all 0.5s ease
+        &__amount
+            margin-left: 10px
+    &__backto
+        position: relative
+        display: block
+        margin-bottom: 10px
+        width: max-content
+        color: #2b66ec
+        overflow: hidden
+        text-decoration: none
+        &:before
+            content: ""
+            background-color: #2b66ec
+            position: absolute
+            width: 100%
+            height: 1px
+            left: 0
+            bottom: 0
+            transition: all 0.3s ease
+        &:hover
+            &:before
+                left: -100%
+    &__cast-block
+        margin-top: 20px
+        &-title
+            font-size: 20px
+            margin-bottom: 20px
+    &__cast-list
+        display: grid
+        grid-template-columns: repeat(4, 25%)
+        grid-gap: 10px
